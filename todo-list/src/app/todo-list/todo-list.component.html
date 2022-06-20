@@ -1,9 +1,15 @@
 <h3>Todos</h3>
 
-<div *ngFor="let todo of todos" class="todo">
+<!-- <div *ngFor="let todo of todos" class="todo">
     <p>Todo title: {{ todo.title }}</p>
     <p>Todo description: {{ todo.description }}</p>
     <p>Is todo done: {{ todo.isDone }}</p>
 
     <a class="todo__details-btn" [routerLink]="'todos/' + todo.id">More details...</a>
-</div>
+</div> -->
+
+<!-- <div *ngFor="let todo of todos">
+    {{ todo | json }}    
+</div> -->
+
+<li *ngFor="let todo of todos"> {{ todo | json}}</li>

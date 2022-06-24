@@ -2,3 +2,5 @@
 <input type="text" name="username-input" id="username-input" [(ngModel)]="username">
 
 <p>Username: {{ username }}</p>
+
+<button [disabled]="isUsernameEmptyString()" (click)="onClickResetUsername()" type="button">Reset!</button>

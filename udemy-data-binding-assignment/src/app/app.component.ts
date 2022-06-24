@@ -9,4 +9,16 @@ export class AppComponent {
   title = 'udemy-data-binding-assignment';
 
   username: string = '';
+
+  isUsernameEmptyString() {
+    if (this.username.trim() == '') {
+      return true;
+    } 
+
+    return false;
+  }
+
+  onClickResetUsername() {
+    this.username = '';
+  }
 }

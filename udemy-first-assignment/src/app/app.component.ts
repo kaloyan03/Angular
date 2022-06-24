@@ -7,14 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'udemy-first-assignment';
-  isDisabled: boolean = false;
+  
+  servers: string[] = [];
+  serverName: string = '';
 
-  buttonText: string = 'Allow it!';
 
-  allowIt() {
-    setTimeout(() => {
-      this.isDisabled = true;
-    },2000)
+  onUpdateServerName(event: any) {
+    this.serverName = event.target.value;
+  }
+
+  onCreateServer() {
+    this.servers.push(this.serverName);
   }
 
 }

@@ -1,5 +1,15 @@
-<button [disabled]="isDisabled" (click)="allowIt()">
-    {{ buttonText }}
+<label for="add-server-input">Server Name:</label>
+<input (input)="onUpdateServerName($event)" type="text" name="add-server-input" id="add-server-input">
+
+<p>Current server name: {{ serverName }}</p>
+
+<button (click)="onCreateServer()" >
+    Add Server
 </button>
+
+<ul>
+    <li *ngFor="let server of servers">{{ server }}</li>
+</ul>
+
 <app-success-alert></app-success-alert>
 <app-warning-alert></app-warning-alert>

@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'udemy-first-assignment';
+  isDisabled: boolean = false;
+
+  allowIt() {
+    setTimeout(() => {
+      this.isDisabled = true;
+    },2000)
+  }
+
 }

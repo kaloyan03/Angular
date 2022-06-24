@@ -9,8 +9,4 @@ export class AppComponent {
   title = 'udemy-data-binding-assignment';
 
   username: string = '';
-
-  onUpdateUsername(event: any) {
-    this.username = event.target.value;
-  }
 }

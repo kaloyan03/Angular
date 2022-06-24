@@ -1,4 +1,4 @@
 <label for="username-input">Username:</label>
-<input type="text" name="username-input" id="username-input" (input)="onUpdateUsername($event)">
+<input type="text" name="username-input" id="username-input" [(ngModel)]="username">
 
 <p>Username: {{ username }}</p>

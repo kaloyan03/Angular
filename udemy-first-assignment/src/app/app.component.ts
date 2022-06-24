@@ -9,6 +9,8 @@ export class AppComponent {
   title = 'udemy-first-assignment';
   isDisabled: boolean = false;
 
+  buttonText: string = 'Allow it!';
+
   allowIt() {
     setTimeout(() => {
       this.isDisabled = true;

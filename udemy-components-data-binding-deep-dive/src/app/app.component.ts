@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'udemy-components-data-binding-deep-dive';
+  serverElements: any[] = [{type: 'server', name: 'test', content: 'test'}, {type: 'server', name: 'test', content: 'test'}];
+  newServerName: string = '';
+  newServerContent: string = '';
+
 }

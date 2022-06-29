@@ -1,1 +1,17 @@
-<p>shopping-edit works!</p>
+<form action="">
+    <div class="input-group mb-3">
+        <label for="product-name" class="form-label">Product name</label>
+        <input type="text" name="product-name" class="form-control" #productName>
+    </div>
+
+    <div class="input-group mb-2">
+        <label for="product-amount" class="form-label">Product amount</label>
+        <input type="number" name="product-amount" class="form-control" #productAmount> 
+    </div>
+
+    <div>
+        <button class="btn btn-success" (click)="onAddItem()">Add</button>
+        <button class="btn btn-danger">Remove</button>
+    </div>
+</form>
+

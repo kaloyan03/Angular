@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   currentPage: string = 'Recipes';
 
-  navClicked(link: string) {
+  onNavigate(link: string) {
     this.currentPage = link;
   }
   

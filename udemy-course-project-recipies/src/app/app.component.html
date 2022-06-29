@@ -1,11 +1,9 @@
-<app-header (navClicked)="navClicked($event)"></app-header>
+<app-header (navClicked)="onNavigate($event)"></app-header>
 <div class="container">
   <div class="row">
-    <div class="col-md-12" *ngIf="currentPage == 'Recipes'">
-      <app-recipies></app-recipies>
-    </div>
-    <div class="col-md-12" *ngIf="currentPage == 'Shopping List'">
-      <app-shopping-list></app-shopping-list>
+    <div class="col-md-12">
+      <app-recipies *ngIf="currentPage == 'Recipes'"></app-recipies>
+      <app-shopping-list *ngIf="currentPage == 'Shopping List'"></app-shopping-list>
 
     </div>
 

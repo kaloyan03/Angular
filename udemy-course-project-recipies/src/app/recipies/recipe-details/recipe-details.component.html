@@ -1,9 +1,12 @@
 <div class="row">
-    <a class="btn btn-primary dropdown-toggle" role="button">Manage Recipe <span class="caret"></span></a>
+    <h1>{{recipe.name}}</h1>
+    <!-- <a class="btn btn-primary dropdown-toggle" role="button">Manage Recipe <span class="caret"></span></a>
     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
         <li><a class="dropdown-item" href="#"></a></li>
-    </ul>
+    </ul> -->
 
-    <p>Description: </p>
+    <img [src]="recipe.imageUrl" alt="" style="max-width: 300px">
+
+    <p>Description: {{ recipe.description }}</p>
     <p>Ingredients: </p>
 </div>

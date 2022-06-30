@@ -11,17 +11,27 @@
           </li>
         </ul>
 
-        <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Manage <span class="caret"></span>
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Save Data</a></li>
+  
+
+        <div class="row navbar-right">
+          <div class="col-xs-12">
+            <div class="btn-group" appDropdown>
+              <button
+              type="button"
+              class="btn btn-primary dropdown-toggle">
+              Manage<span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Save Data</a></li>
                   <li><a class="dropdown-item" href="#">Fetch Data</a></li>
-                </ul>
-              </li>
-        </ul>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+
+        
       </div>
     </div>
   </nav>

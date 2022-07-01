@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AccountService } from '../account.service';
-import { LoggingService } from '../logging.service';
 
 @Component({
   selector: 'app-new-account',
@@ -8,12 +7,11 @@ import { LoggingService } from '../logging.service';
   styleUrls: ['./new-account.component.css']
 })
 export class NewAccountComponent {
-  constructor(private loggingService: LoggingService, private accountService: AccountService) {}
+  constructor(private accountService: AccountService) {}
 
 
   onCreateAccount(accountName: string, accountStatus: string) {
     this.accountService.addAccount(accountName, accountStatus);
-    this.loggingService.logStatus(accountName);
   }
 }
 

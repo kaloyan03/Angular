@@ -9,6 +9,11 @@
 
     <p>Description: {{ recipe.description }}</p>
     <p>Ingredients: </p>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let ingredient of recipe.ingredients">
+        {{ ingredient.name }} - {{ ingredient.amount }}
+      </li>
+    </ul>
 
     <div class="row navbar-right">
         <div class="col-xs-12">

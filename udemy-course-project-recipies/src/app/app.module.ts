@@ -13,7 +13,7 @@ import { HeaderComponent } from './header/header.component';
 import { FormsModule } from '@angular/forms';
 import { DropdownDirective } from './dropdown.directive';
 import { RecipeService } from './recipies/recipies.service';
-import { ShoppingListService } from './shopping-list.service';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
 
 @NgModule({
   declarations: [

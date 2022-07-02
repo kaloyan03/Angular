@@ -3,6 +3,7 @@
     <div class="list-group">
       <a
         href="#"
+        [routerLink]="['/server', server.id]"
         class="list-group-item"
         *ngFor="let server of servers">
         {{ server.name }}

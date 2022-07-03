@@ -15,6 +15,7 @@ import { DropdownDirective } from './dropdown.directive';
 import { RecipeService } from './recipies/recipies.service';
 import { ShoppingListService } from './shopping-list/shopping-list.service';
 import { RecipeStartComponent } from './recipies/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipies/recipe-edit/recipe-edit.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { RecipeStartComponent } from './recipies/recipe-start/recipe-start.compo
     HeaderComponent,
     DropdownDirective,
     RecipeStartComponent,
+    RecipeEditComponent,
   ],
   imports: [
     BrowserModule,

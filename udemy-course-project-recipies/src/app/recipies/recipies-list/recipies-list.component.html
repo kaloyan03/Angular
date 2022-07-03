@@ -5,7 +5,7 @@
 
     <div class="col-xs-12">
         <ul class="recipies">
-            <app-recipe-item *ngFor="let recipe of recipies" [recipe]="recipe"></app-recipe-item>
+            <app-recipe-item [routerLink]="['/recipies', i]" *ngFor="let recipe of recipies; let i = index" [recipe]="recipe"></app-recipe-item>
         </ul>
     </div>
 </div>
